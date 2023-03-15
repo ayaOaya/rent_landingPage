@@ -1,0 +1,162 @@
+.page{
+   background-color: #E5D8CC;
+   height: 600vh;
+    .page-bg{
+        background-image: url(https://images.unsplash.com/photo-1632783242863-35e5ea3079d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODgzNDc1OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+        height: 115vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        .navbar{
+            color: #F7FBD3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0  30px;
+            padding-top: 25px;
+            .logo{
+                font-family: Ubuntu, sans-serif;
+                font-size: 25px;
+            }
+            .ul {
+                text-decoration: none;
+                display: inline-block;
+                .li{
+                    font-family: sans-serif; 
+                    display: inline; 
+                    padding-left: 150px;
+                }
+                .li:hover{
+                    cursor: pointer;
+                }
+            }
+            
+
+        }
+
+        .first-header{
+            color: #F7FBD3;
+            padding-top: 110px;
+            padding-left: 15%;
+            font-family: sans-serif;
+            font-size: 50px;
+            
+        }
+        .second-header{
+            color: #F7FBD3;
+            padding-top: 20px;
+            padding-left: 24%;
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .third-header{
+            color: #F7FBD3;
+            padding-top: 20px;
+            padding-left: 15%;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+        .small-title{
+            padding-left: 70%;
+            color: #F7FBD3;
+            font-family: sans-serif;
+            font-style: italic;
+            padding-top: 80px;
+        }
+
+        .p{
+            padding-left: 70%;
+            color: #F7FBD3;
+            font-family: sans-serif;
+            width: 25%;
+            line-height: 23px;
+            
+        }
+    }
+
+
+
+    .first-img{
+        background-image: url(https://images.unsplash.com/photo-1570126618953-d437176e8c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODgxMjI5OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080
+        );
+        height: 45vh;
+        width: 550px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 2px;
+        position: absolute;
+        top: 50rem;
+        left: 40px;
+
+    }
+    .first-cont-h1{
+        padding-top: 32rem;
+        padding-left: 250px;
+        color: #1b0d00;
+        font-size: 65px;
+        font-family: sans-serif;
+
+    }
+    span{
+        font-style: italic;
+    }
+    .first-container-mix{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 100px;
+   
+    .first-cont-p{
+        padding-left: 250px;
+        color: #1b0d00;
+        font-size: 15px;
+        font-family: sans-serif;
+       width: 50%;
+       line-height: 23px;
+
+    }
+    .first-cont-img{
+        background-image: url(https://images.unsplash.com/photo-1497366412874-3415097a27e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NTc0NjIxOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+        height: 100vh;
+        width: 700px;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+.second-cont-img{
+    background-image: url(https://images.unsplash.com/photo-1659427333436-450d03dfb151?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3ODgxMjIyMQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+    position: absolute;
+    top: 105rem;
+    margin-left: 250px;
+    height: 30vh;
+    width: 25vw;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.second-container{
+    padding-left: 46rem;
+    padding-top: 100px;
+
+    .second-cont-paragraghs{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .second-container-para-1{
+            width: 80%;
+            line-height: 23px;
+        }
+        .second-container-para-2{
+            width: 95%;
+            line-height: 23px;
+        }
+    }
+}
+
+}
