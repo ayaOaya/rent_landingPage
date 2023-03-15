@@ -1,7 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.scss"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 export default function Page() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() =>{
+        gsap.to(".page-bg", {clipPath:"polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity:1, duration:1.3 })
+        gsap.to(".navbar", {delay:1.3, opacity:1, y:10 })
+        gsap.to(".first-header", {delay:2, opacity:1, y:10 })
+        gsap.to(".second-header", {delay:2.8, opacity:1, y:10 })
+        gsap.to(".third-header", {delay:3.5, opacity:1, y:10 })
+        gsap.to(".small-title", {delay:4.5, opacity:1})
+        gsap.to(".p", {delay:5, duration:1.2 ,opacity:1, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" })
+        gsap.to(".first-img", { clipPath:" polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", scrollTrigger:{
+            trigger:".first-img",
+
+        } })
+        gsap.to(".italic", { opacity:1, delay:1.1, scrollTrigger:{
+            trigger:".italic"
+        } })
+        gsap.to(".first-cont-img", { duration:1.1, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration:1.1, scrollTrigger:{
+            trigger:".first-cont-img"
+        } })
+        gsap.to(".second-cont-img", {duration:1.2, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" , scrollTrigger:{
+            trigger:".second-cont-img"
+        } })
+        gsap.to(".second-cont-h1", { opacity:1, y:10, scrollTrigger:{
+            trigger:".second-cont-h1"
+        } })
+        gsap.to(".h1-cara", {delay:1.6, duration:1.2, opacity:1, clipPath:"polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", scrollTrigger:{
+            trigger:".h1-cara"
+        } })
+
+        
+
+    }
+    )
   return (
     <>
     <div className="page">
