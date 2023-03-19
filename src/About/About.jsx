@@ -1,60 +1,74 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.scss"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 export default function About() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() =>{
+        gsap.to(".about-h1", { opacity:1, duration:1, delay:1})
+        gsap.to(".containe", { opacity:1, duration:1.1, delay:1.5})
+        gsap.to(".more-grid", {opacity:1, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration:1, scrollTrigger:{
+            trigger:".more-grid"
+        } })
+    })
+
   return (
     <>
-<h1>ABOUT</h1>
+
+    <div className="about">
+<h1 className='about-h1'>ABOUT</h1>
 
 <div className="architect">
     <div className="containe">
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img1"></div>
+            <div className="bg-img1 img"></div>
             </a>
         </div>
 
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img2"></div>
+            <div className="bg-img2 img"></div>
             </a>
         </div>
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img3"></div>
+            <div className="bg-img3 img"></div>
             </a>
         </div>
 
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img4"></div>
-            </a>
-        </div>
-
-
-        <div className="bg-all">
-        <a href="/">
-            <div className="bg-img5"></div>
+            <div className="bg-img4 img"></div>
             </a>
         </div>
 
 
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img6"></div>
+            <div className="bg-img5 img"></div>
             </a>
         </div>
 
 
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img7"></div>
+            <div className="bg-img6 img"></div>
+            </a>
+        </div>
+
+
+        <div className="bg-all">
+        <a href="/">
+            <div className="bg-img7 img"></div>
             </a>
         </div>
 
         <div className="bg-all">
         <a href="/">
-            <div className="bg-img8"></div>
+            <div className="bg-img8 img"></div>
             </a>
         </div>
     </div>
@@ -68,12 +82,10 @@ export default function About() {
     </div>
 
 
-    <div className="info">
-        <h2>Contact</h2>
-        <button className='btn'>click</button>
-
-    </div>
+  
 </div>
+</div>
+
     </>
   )
 }

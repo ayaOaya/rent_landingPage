@@ -30,7 +30,7 @@ export default function Page() {
         gsap.to(".second-cont-h1", { opacity:1, y:10, scrollTrigger:{
             trigger:".second-cont-h1"
         } })
-        gsap.to(".h1-cara", {delay:1.6, duration:1.2, opacity:1, clipPath:"polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", scrollTrigger:{
+        gsap.to(".h1-cara", {delay:1.3, duration:1.2, opacity:1, clipPath:"polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", scrollTrigger:{
             trigger:".h1-cara"
         } })
 

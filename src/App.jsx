@@ -1,6 +1,5 @@
 import About from './About/About'
 import './App.css'
-import Horizantal from './Horizantal/Horizantal'
 import Page from './Page/Page'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
