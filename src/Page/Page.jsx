@@ -46,7 +46,7 @@ export default function Page() {
                 <h1 className="logo">SOMESTUFF</h1>
                 <ul className="ul">
                     <li className="li">HOME</li>
-                    <li className="li">ABOUT</li>
+                    <li className="li"><a href="/about">ABOUT</a></li>
                     <li className="li">MORE</li>
                     <li className="li">CONTACT</li>
                 </ul>
