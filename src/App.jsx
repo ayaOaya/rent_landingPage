@@ -28,16 +28,16 @@ requestAnimationFrame(raf)
 
 
 function App() {
- 
+
   return (
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={ <Page />} />
-    <Route path="/about" element={ <About />} />
-     
-     
-     </Routes>
-   </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page />} />
+        <Route path="/about" element={<About />} />
+
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
